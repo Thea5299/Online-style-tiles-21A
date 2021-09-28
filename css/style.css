@@ -27,7 +27,7 @@ use the fonts in other ways in the font hierarchy etc. */
 
   --white-space: 1rem;
 
-  --bg-color: #000;
+  --bg-color: rgb(187, 163, 128);
   --link-color: #000;
   --link-hover-color: #000;
   --color-4: #000;
@@ -71,6 +71,9 @@ footer {
   padding-right: 0.75em;
   font-weight: bold;
   color: white;
+  font-family: pulpo-rust-75, serif;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .header-wrapper h2 {
@@ -121,46 +124,60 @@ ul li:last-child {
 }
 
 .color-swatch-1 {
-  background-color: var(--bg-color);
+  background-color: #ffffff;
+  border: solid 1px #000;
 }
 
 .color-swatch-2 {
-  background-color: var(--link-color);
+  background-color: #9ba789;
 }
 
 .color-swatch-3 {
-  background-color: var(--link-hover-color);
+  background-color: #9f7962;
 }
 
 .color-swatch-4 {
-  background-color: var(#9ba789);
+  background-color: #cfdce2;
 }
 
 .color-swatch-5 {
-  background-color: var(--color-5);
+  background-color: #9ba789;
+}
+.billedegrid {
+  display: flex;
+  flex-direction: row;
+  width: 15vw;
+  height: 18vw;
 }
 
+.billedegrid img:nth-child(2) {
+  width: 13.4vw;
+}
+
+.billedegrid img:nth-child(3) {
+  width: 14vw;
+}
+
+.billedegrid img {
+  padding: 1vw;
+}
 .textures li {
   height: 30vw;
   width: 40%;
   margin-right: 5vw;
 }
 
-.texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
+/* .texture-swatch-1 {
+  background: url(../img/sand.jpg) top left repeat;
 }
 
 .texture-swatch-2 {
-  background: url(../img/subtle_grunge.png) top left repeat;
-}
-
-.texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
+  background: url(../img/sten.jpg) top left repeat;
 }
 
 .texture-swatch-3 {
-  background: url(../img/white_paperboard.png) top left repeat;
-}
+  background: url(../img/bruntpapir.jpg) top left repeat;
+} */
 
 .images ul {
   flex-direction: column;
@@ -182,21 +199,22 @@ ul li:last-child {
 button {
   padding: 1rem;
   border-radius: 4px;
-  background: var(--link-color);
+  background: url(../img/knap.jpg);
   text-align: center;
   text-decoration: none;
   font: bold 1.25em/1 var(--primary-font);
   letter-spacing: 1px;
   color: white;
   text-transform: uppercase;
-  text-shadow: 0px -1px 0px #0374a0;
+  text-shadow: 0px -1px 0px #c7ad66;
   transition: all 0.2s ease;
   cursor: pointer;
   /* margin: 0 1rem 0 0; */
+  border: none;
 }
 
 .secondary-button {
-  background: var(--color-5);
+  background: #9ba789;
 }
 
 button:focus,
@@ -208,7 +226,7 @@ button:focus-within {
 
 button:hover {
   background-color: var(--link-hover-color);
-  transform: scale(3) rotate(40deg);
+  /* transform: scale(3) rotate(40deg); */ /*hover fjernet */
 }
 
 button:active {
@@ -222,18 +240,24 @@ button:active {
 .h1-sample {
   font-size: 2.4rem;
   font-weight: bold;
+  font-family: pulpo-rust-75, serif;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .h2-sample {
-  font-family: var(--secondary-font);
-  font-style: italic;
-  font-size: 1.25rem;
+  font-family: sofia-pro, sans-serif;
+  font-style: normal;
+  font-weight: 100;
 }
 
 p.typography-sample {
   font-family: var(--secondary-font);
   line-height: 1.5;
   max-width: 960px;
+  font-family: sofia-pro, sans-serif;
+  font-style: normal;
+  font-weight: 100;
 }
 
 strong {
@@ -252,12 +276,12 @@ a {
   transition: all 0.2s;
 }
 
-a:hover {
+/* a:hover {
   color: var(--link-hover-color);
   font-size: 4rem;
   background-color: var(--color-4);
   opacity: 0.1;
-}
+} */
 
 p[class*="font-details-"] {
   margin-top: 0.5rem;
@@ -270,7 +294,10 @@ p[class*="font-details-"] {
 
 .adjectives ul {
   font-size: 2rem;
-  opacity: 0.5;
+  /* opacity: 0.5; */
+  font-family: sofia-pro, sans-serif;
+  font-style: normal;
+  font-weight: 100;
 }
 
 .adjectives ul {
